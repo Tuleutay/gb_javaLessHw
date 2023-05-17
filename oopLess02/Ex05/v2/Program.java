@@ -39,6 +39,7 @@ public class Program {
         //team2.add(new Druid());
         team2.add(new Paladin());
         team2.add(new Knight());
+        team2.add(new God());
 
         team2.get(0).attack(null);
 
@@ -46,8 +47,10 @@ public class Program {
         //team2.add(new Paladin());
         team3.add(new Druid());
         team3.add(new Shaman());
+        team3.add(new God());
 
-        team3.get(0).healing(null);
+        team2.get(0).attack((Hero) team3.get(0));
+        ((Healer)(team2.get(2))).healing(null);
 
 
         //#endregion
